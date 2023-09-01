@@ -5,3 +5,5 @@ Esse repositório faz parte do módulo "Primeiras Páginas Interativas com JavaS
 Esse projeto não é um Fork do original, pois eu fui programando enquanto assistia as aulas, como não temos a necessidade de fazer um Pull Request, optei por manter os meus arquivos.
 
 O repositório original pode ser encontrado aqui: https://github.com/digitalinnovationone/js-developer-pokedex/
+
+Você pode abrir esse projeto no seu navegador acessando a URL: https://felipefalkiner.github.io/dio-js-pokedex/
