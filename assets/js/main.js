@@ -13,7 +13,7 @@ function convertPokemonToLi(pokemon) {
     const image = pokemon.img
     const type = pokemon.type
 
-    return `<li class="pokemon ${type}">
+    return `<li onclick="getPokemonInfo(${number})" class="pokemon ${type}">
     <span class="number">#${number}</span>
     <span class="name">${name}</span>
     <div class="detail">
@@ -23,7 +23,11 @@ function convertPokemonToLi(pokemon) {
         <img src="${image}" alt="${name}">
     </div>
 
-    </li>`
+    </li></a>`
+}
+
+function getPokemonInfo(number){
+    console.log(`Pokémon Número: ${number}`)
 }
 
 function loadPokemonItens(offset, limit) {
@@ -49,3 +53,6 @@ loadMoreButton.addEventListener('click', () => {
 
     
 })
+
+
+
