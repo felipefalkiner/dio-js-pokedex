@@ -76,13 +76,20 @@ a:active {
     border-style: solid;
     opacity: 0;
     background-color: #FFF;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     left: 0;
     right: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
 }
 
-#pokeInfo .pokeInfoType {
+#pokeInfo .active {
+    opacity: 1;
+}
+
+#pokeInfo .pokeInfoTypes {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -94,16 +101,16 @@ a:active {
 #pokeInfo .type {
     width: 75px;
     color: #FFF;
-    font-size: .625rem;
-    margin: .25rem 0;
+    margin: .25rem 0.25rem;
     border-radius: 1rem;
     filter: brightness(1.1);
     text-align: center;
     text-transform: capitalize;
+    padding: 0.5rem;
 }
 
 #pokeInfo img {
-    width: 100px;
+    width: 200px;
     height: auto;
 }
 
@@ -111,3 +118,25 @@ a:active {
     list-style: none;
     padding: 0;
 }
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+  }
+
+  #closeButton{
+    position: absolute;
+    right: 0;
+    margin: 1rem;
+    background-color: #FF0000;
+    border: none;
+    border-radius: 1rem;
+    color: #FFF;
+    padding: .75rem .75rem;
+    font-size: 1rem;
+  }
