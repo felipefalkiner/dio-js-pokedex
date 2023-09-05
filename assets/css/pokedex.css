@@ -135,6 +135,10 @@
 @media screen and (min-width:380px) {
     .pokemons {
         grid-template-columns: 1fr 1fr;
+        
+    }
+    .pokemon .detail img {
+        height: 90px;
     }
 }
 
@@ -142,6 +146,10 @@
 @media screen and (min-width:576px) {
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+    .pokemon .detail img {
+        height: 90px;
     }
 }
 
@@ -149,5 +157,8 @@
 @media screen and (min-width:992px) {
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .pokemon .detail img {
+        height: 115px;
     }
 }
